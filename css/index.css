@@ -14,12 +14,37 @@ main{
 }
 main .menu{
     overflow: hidden;
-    background-color: grey;
+    background-color: rgba(225, 225, 225,0.3);
     height: calc(100vh - 80px);
+    overflow-y: scroll;
 }
 main .menu ul {
     margin: 20px;
 }
+main .menu .li{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    font-weight: 400;
+}
+main .menu .language , .browser , .beyond{
+    display: none;
+}
+.language , .browser , .beyond{
+    margin-top: 10px;
+}
+.language h4, .browser h4, .beyond h4{
+    margin-left: 10px;
+    color: rgb(100, 100, 100);
+}
+.language li , .browser li , .beyond li{
+    list-style: none;
+    margin-right: 20px;
+}
+
 /* ---- for screen below 700px ----- */
 @media only screen and (max-width: 700px){
     body{
