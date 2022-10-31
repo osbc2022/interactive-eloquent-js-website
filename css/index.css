@@ -8,11 +8,15 @@ nav{
     position: relative;
     z-index: 1000;
 }
+nav .menuBtn{
+    display: none;
+}
 nav .flex-between{
     padding: 30px;
-    color: whitesmoke;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
     font-style: italic;
+    justify-content: center;
+    align-items: center;
 }
 main{
     display: grid;
@@ -60,6 +64,12 @@ main .menu .language , .browser , .beyond{
     nav{
         position: absolute;
         bottom: 0;
+    }
+    nav .flex-between{
+        justify-content: space-between;
+    }
+    nav .menuBtn{
+        display: block;
     }
     main{
         grid-template-columns: 0 100%;
