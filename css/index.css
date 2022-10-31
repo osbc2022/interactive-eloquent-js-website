@@ -1,0 +1,36 @@
+@import "./utils.css";
+
+/*--- nav modal ---*/
+nav{
+    width: 100%;
+    background-color: blue;
+}
+nav .flex-between{
+    padding: 30px;
+}
+main{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+main .menu{
+    overflow: hidden;
+    background-color: grey;
+    height: calc(100vh - 80px);
+}
+main .menu ul {
+    margin: 20px;
+}
+/* ---- for screen below 700px ----- */
+@media only screen and (max-width: 700px){
+    body{
+        position: relative;
+        padding-bottom: 80px;
+    }
+    nav{
+        position: absolute;
+        bottom: 0;
+    }
+    main{
+        grid-template-columns: 0 100%;
+    }
+}
