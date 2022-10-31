@@ -43,8 +43,6 @@
                 </ul>
             </div>
         </aside>
-
-        <div class="main-content">
             <div class="m30">
                 <h1>values</h1>
                 <p>
@@ -66,6 +64,42 @@
                     This chapter introduces the atomic elements of JavaScript programs,
                     that is, the simple value types and the operators that can act on such values
                 </p>
+                <h1>Numbers</h1>
+               <p>
+               Values of the number type are, unsurprisingly, numeric values. In a JavaScript
+               program, they are written as follows
+				<li> 13 </li>
+				Use that in a program, and it will cause the bit pattern for the number
+13 to come into existence inside the computer’s memory.
+JavaScript uses a fixed number of bits, namely 64 of them, to store a
+single number value. There are only so many patterns you can make with
+64 bits, which means that the amount of different numbers that can be rep-
+resented is limited. For N decimal digits, the amount of numbers that can
+be represented is 10 N . Similarly, given 64 binary digits, you can represent2 64 different numbers, which is about 18 quintillion (an 18 with 18 zeros
+after it). This is a lot.
+Computer memory used to be a lot smaller, and people tended to use
+groups of 8 or 16 bits to represent their numbers. It was easy to acciden-
+tally overflow such small numbers—to end up with a number that did not fit
+into the given amount of bits. Today, even personal computers have plenty
+of memory, so you are free to use 64-bit chunks, which means you need to
+worry about overflow only when dealing with truly astronomical numbers.
+Not all whole numbers below 18 quintillion fit in a JavaScript number,
+though. Those bits also store negative numbers, so one bit indicates the sign
+of the number. A bigger issue is that nonwhole numbers must also be repre-
+sented. To do this, some of the bits are used to store the position of the deci-
+mal point. The actual maximum whole number that can be stored is more in
+the range of 9 quadrillion (15 zeros), which is still plenty huge.
+<br>
+That is 2.998 × 10 8 = 299,800,000.
+Calculations with whole numbers (also called integers) smaller than the
+aforementioned 9 quadrillion are guaranteed to always be precise. Unfortu-
+nately, calculations with fractional numbers are generally not. Just as π (pi)
+cannot be precisely expressed by a finite number of decimal digits, many
+numbers lose some precision when only 64 bits are available to store them.
+This is a shame, but it causes practical problems only in specific situations.
+The important thing is to be aware of it and treat fractional digital numbers
+as approximations, not as precise values.
+               </p>
             </div>
         </div>
     </main>
