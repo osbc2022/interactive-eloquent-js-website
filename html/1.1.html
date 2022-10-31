@@ -100,6 +100,35 @@ This is a shame, but it causes practical problems only in specific situations.
 The important thing is to be aware of it and treat fractional digital numbers
 as approximations, not as precise values.
                </p>
+
+               <h1>Unary Operators</h1>
+               <p>
+               Not all operators are symbols. Some are written as words. One example is
+               the typeof operator, which produces a string value naming the type of the
+               value you give it.
+               <br>
+               console.log(typeof 4.5)
+               <br>
+               // . number
+               <br>
+               console.log(typeof "x")
+               <br>
+               // . string
+               <br>
+               We will use console.log in example code to indicate that we want to see
+               the result of evaluating something. When you run such code, the value pro-
+               duced should be shown on the screen, though how it appears will depend
+               on the JavaScript environment you use to run it.
+               The other operators we saw all operated on two values, but typeof takes
+               only one. Operators that use two values are called binary operators, while
+               those that take one are called unary operators. The minus operator can be
+               used both as a binary operator and as a unary operator.
+               <br>
+               console.log(- (10 - 2))
+               <br>
+               // . -8
+               <br>
+               </p>
             </div>
         </div>
     </main>
