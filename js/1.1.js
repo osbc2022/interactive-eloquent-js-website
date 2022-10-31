@@ -12,3 +12,13 @@ dropBtn.forEach((ele)=>{
         }
     }
 })
+
+function menu(){
+    let main = document.querySelector("main");
+    if(main.style.gridTemplateColumns === "100% 0%"){
+        main.style.gridTemplateColumns = "0% 100%";
+    }
+    else{
+        main.style.gridTemplateColumns = "100% 0%"
+    }
+}
