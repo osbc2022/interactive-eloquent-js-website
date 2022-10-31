@@ -3,13 +3,16 @@
 /*--- nav modal ---*/
 nav{
     width: 100%;
-    background-color: blue;
+    background-color: var(--primary);
     box-shadow: 1px 5px 5px rgba(0, 0, 0,0.1);
     position: relative;
     z-index: 1000;
 }
 nav .flex-between{
     padding: 30px;
+    color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
 }
 main{
     display: grid;
