@@ -4,6 +4,9 @@
 nav{
     width: 100%;
     background-color: blue;
+    box-shadow: 1px 5px 5px rgba(0, 0, 0,0.1);
+    position: relative;
+    z-index: 1000;
 }
 nav .flex-between{
     padding: 30px;
