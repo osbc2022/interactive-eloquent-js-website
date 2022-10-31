@@ -100,6 +100,29 @@ This is a shame, but it causes practical problems only in specific situations.
 The important thing is to be aware of it and treat fractional digital numbers
 as approximations, not as precise values.
                </p>
+               <h1>string</h1>
+               <p>The next basic data type is the string. Strings are used to represent text. They
+                are written by enclosing their content in quotes.
+                "Patch my boat with chewing gum"
+                'Monkeys wave goodbye'
+                Both single and double quotes can be used to mark strings as long as the
+                quotes at the start and the end of the string match.
+                Almost anything can be put between quotes, and JavaScript will make a
+                string value out of it. But a few characters are more difficult. You can imag-
+                ine how putting quotes between quotes might be hard. Newlines (the char-
+                acters you get when you press ENTER ) also can’t be put between quotes. The
+                string has to stay on a single line.
+                To include such characters in a string, the following notation is used:
+whenever a backslash ( \ ) is found inside quoted text, it indicates that the
+character after it has a special meaning. This is called escaping the charac-
+ter. A quote that is preceded by a backslash will not end the string but be
+part of it. When an n character occurs after a backslash, it is interpreted as
+a newline
+Strings cannot be divided, multiplied, or subtracted, but the + operator
+can be used on them. It does not add, but rather concatenates—it glues two
+strings together. The following line will produce the string "concatenate" :
+"con" + "cat" + "e" + "nate"
+            </p>
             </div>
         </div>
     </main>
