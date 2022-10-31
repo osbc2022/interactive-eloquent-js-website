@@ -153,6 +153,43 @@ strings together. The following line will produce the string "concatenate" :
                <br>
                </p>
 
+               <h1>boolean</h1>
+               <p>Often, you will need a value that simply distinguishes between two possibil-
+                ities, like “yes” and “no” or “on” and “off.” For this, JavaScript has a Boolean
+                type, which has just two values: true and false (which are written simply as
+                those words).
+                Comparisons
+                Here is one way to produce Boolean values:
+                <br>
+                console.log(3 > 2)
+                <br>
+                // . true
+                <br>
+                console.log(3 < 2)
+                <br>
+                // . false
+                <br>
+                The > and < signs are the traditional symbols for “is greater than” and “is
+                less than,” respectively. They are binary operators. Applying them results in
+                a Boolean value that indicates whether they hold true in this case.
+                Strings can be compared in the same way.
+                <br>
+                console.log("Aardvark" < "Zoroaster")
+                <br>
+                // . true
+                The way strings are ordered is more or less alphabetic: uppercase letters
+                are always “less” than lowercase ones, so "Z" < "a" is true, and nonalphabetic
+                <br>
+                characters (!, -, and so on) are also included in the ordering. The actual
+                comparison is based on the Unicode standard. This standard assigns a num-
+                ber to virtually every character you would ever need, including characters
+                from Greek, Arabic, Japanese, Tamil, and so on. Having such numbers is
+                useful for storing strings inside a computer because it makes it possible to
+                represent them as a sequence of numbers. When comparing strings, Java-
+                Script goes over them from left to right, comparing the numeric codes of
+                the characters one by one</p>
+
+
                <h1>Automatic Type Conversion</h1>
                <p>
                In the introduction, I mentioned that JavaScript goes out of its way to accept
@@ -200,6 +237,7 @@ strings together. The following line will produce the string "concatenate" :
                convert one of the values to the other value’s type. However, when null or
                undefined occurs on either side of th
                </p>
+
             </div>
         </div>
     </main>
